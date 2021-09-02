@@ -1,0 +1,13 @@
+D:\Documents\윈폼\SteamworkUploader\bin\Debug\SteamworkUploader.exe.config
+D:\Documents\윈폼\SteamworkUploader\bin\Debug\SteamworkUploader.exe
+D:\Documents\윈폼\SteamworkUploader\bin\Debug\SteamworkUploader.pdb
+D:\Documents\윈폼\SteamworkUploader\obj\Debug\SteamworkUploader.csprojAssemblyReference.cache
+D:\Documents\윈폼\SteamworkUploader\obj\Debug\SteamworkUploader.Form1.resources
+D:\Documents\윈폼\SteamworkUploader\obj\Debug\SteamworkUploader.Properties.Resources.resources
+D:\Documents\윈폼\SteamworkUploader\obj\Debug\SteamworkUploader.csproj.GenerateResource.cache
+D:\Documents\윈폼\SteamworkUploader\obj\Debug\SteamworkUploader.csproj.CoreCompileInputs.cache
+D:\Documents\윈폼\SteamworkUploader\obj\Debug\SteamworkUploader.exe
+D:\Documents\윈폼\SteamworkUploader\obj\Debug\SteamworkUploader.pdb
+D:\Documents\윈폼\SteamworkUploader\bin\Debug\Facepunch.Steamworks.Win64.dll
+D:\Documents\윈폼\SteamworkUploader\bin\Debug\Facepunch.Steamworks.Win64.xml
+D:\Documents\윈폼\SteamworkUploader\obj\Debug\SteamworkUploader.csproj.CopyComplete

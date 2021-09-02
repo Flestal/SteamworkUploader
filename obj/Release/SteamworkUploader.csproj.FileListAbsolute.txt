@@ -1,0 +1,12 @@
+D:\Documents\윈폼\SteamworkUploader\bin\Release\SteamworkUploader.exe.config
+D:\Documents\윈폼\SteamworkUploader\bin\Release\SteamworkUploader.exe
+D:\Documents\윈폼\SteamworkUploader\bin\Release\SteamworkUploader.pdb
+D:\Documents\윈폼\SteamworkUploader\bin\Release\Facepunch.Steamworks.Win64.dll
+D:\Documents\윈폼\SteamworkUploader\bin\Release\Facepunch.Steamworks.Win64.xml
+D:\Documents\윈폼\SteamworkUploader\obj\Release\SteamworkUploader.Form1.resources
+D:\Documents\윈폼\SteamworkUploader\obj\Release\SteamworkUploader.Properties.Resources.resources
+D:\Documents\윈폼\SteamworkUploader\obj\Release\SteamworkUploader.csproj.GenerateResource.cache
+D:\Documents\윈폼\SteamworkUploader\obj\Release\SteamworkUploader.csproj.CoreCompileInputs.cache
+D:\Documents\윈폼\SteamworkUploader\obj\Release\SteamworkUploader.csproj.CopyComplete
+D:\Documents\윈폼\SteamworkUploader\obj\Release\SteamworkUploader.exe
+D:\Documents\윈폼\SteamworkUploader\obj\Release\SteamworkUploader.pdb
