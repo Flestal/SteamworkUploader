@@ -18,20 +18,11 @@ namespace SteamworkUploader
         public Form1()
         {
             InitializeComponent();
-            try
-            {
-                SteamClient.Init(1256670U,true);
-                steamId = SteamClient.SteamId;
-                tb_log_newitem.Text = "Init OK";
-            }
-            catch(Exception e)
-            {
-                tb_log_newitem.Text = e.Message;
-                tb_log_newitem.Text += e.StackTrace;
-            }
+            GameInit();
             groupBox1.AllowDrop = true;
             groupBox2.AllowDrop = true;
         }
+
 
         private void panel1_DragEnter(object sender, DragEventArgs e)
         {
@@ -211,6 +202,43 @@ namespace SteamworkUploader
             var result = await item.SubmitAsync();
 
             tb_log_update.Text = "업로드 완료";
+        }
+
+        private void GameInit()
+        {
+            SteamClient.Shutdown();
+            string[] str = tb_shopPage.Text.Split('/');
+            tb_log_newitem.Text = "";
+            uint appId = 1256670;
+            foreach (string s in str)
+            {
+                //tb_log_newitem.Text += "\n" + s;
+                try
+                {
+                    appId = Convert.ToUInt32(s);
+                }
+                catch (Exception)
+                {
+                    continue;
+                }
+            }
+            tb_log_newitem.Text = appId.ToString();
+            try
+            {
+                SteamClient.Init(appId, true);
+                steamId = SteamClient.SteamId;
+                tb_log_newitem.Text = "Init OK, app Id : "+appId;
+            }
+            catch (Exception ex)
+            {
+                tb_log_newitem.Text = ex.Message;
+                tb_log_newitem.Text += Environment.NewLine + ex.StackTrace;
+            }
+        }
+
+        private void btn_GameInit_Click(object sender, EventArgs e)
+        {
+            GameInit();
         }
 
         private async void button1_Click(object sender, EventArgs e)

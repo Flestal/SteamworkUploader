@@ -42,36 +42,39 @@ namespace SteamworkUploader
             this.label6 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tb_log_newitem = new System.Windows.Forms.TextBox();
-            this.tb_workshopItemAddress = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.tb_path = new System.Windows.Forms.TextBox();
-            this.tb_updateTitle = new System.Windows.Forms.TextBox();
-            this.tb_updateTag = new System.Windows.Forms.TextBox();
-            this.tb_updateDesc = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tb_log_newitem = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label15 = new System.Windows.Forms.Label();
+            this.tb_whatNew = new System.Windows.Forms.TextBox();
+            this.tb_log_update = new System.Windows.Forms.TextBox();
             this.tb_updatePath = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.tb_log_update = new System.Windows.Forms.TextBox();
-            this.tb_whatNew = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tb_updateDesc = new System.Windows.Forms.TextBox();
+            this.tb_updateTag = new System.Windows.Forms.TextBox();
+            this.tb_updateTitle = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tb_workshopItemAddress = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.btn_GameInit = new System.Windows.Forms.Button();
+            this.tb_shopPage = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -177,7 +180,7 @@ namespace SteamworkUploader
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Location = new System.Drawing.Point(12, 82);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(698, 401);
@@ -205,6 +208,34 @@ namespace SteamworkUploader
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "새 아이템 등록";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tb_path
+            // 
+            this.tb_path.Location = new System.Drawing.Point(84, 121);
+            this.tb_path.Name = "tb_path";
+            this.tb_path.ReadOnly = true;
+            this.tb_path.Size = new System.Drawing.Size(174, 25);
+            this.tb_path.TabIndex = 13;
+            // 
+            // tb_log_newitem
+            // 
+            this.tb_log_newitem.Location = new System.Drawing.Point(386, 176);
+            this.tb_log_newitem.Multiline = true;
+            this.tb_log_newitem.Name = "tb_log_newitem";
+            this.tb_log_newitem.ReadOnly = true;
+            this.tb_log_newitem.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tb_log_newitem.Size = new System.Drawing.Size(289, 180);
+            this.tb_log_newitem.TabIndex = 12;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(264, 287);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(116, 69);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "등록";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tabPage2
             // 
@@ -234,81 +265,103 @@ namespace SteamworkUploader
             this.tabPage2.Text = "기존 아이템 업데이트";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // label15
             // 
-            this.button1.Location = new System.Drawing.Point(264, 287);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 69);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "등록";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(266, 190);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(57, 17);
+            this.label15.TabIndex = 18;
+            this.label15.Text = "변경점 : ";
             // 
-            // tb_log_newitem
+            // tb_whatNew
             // 
-            this.tb_log_newitem.Location = new System.Drawing.Point(386, 176);
-            this.tb_log_newitem.Multiline = true;
-            this.tb_log_newitem.Name = "tb_log_newitem";
-            this.tb_log_newitem.ReadOnly = true;
-            this.tb_log_newitem.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tb_log_newitem.Size = new System.Drawing.Size(289, 180);
-            this.tb_log_newitem.TabIndex = 12;
+            this.tb_whatNew.Location = new System.Drawing.Point(329, 187);
+            this.tb_whatNew.Name = "tb_whatNew";
+            this.tb_whatNew.Size = new System.Drawing.Size(328, 25);
+            this.tb_whatNew.TabIndex = 17;
             // 
-            // tb_workshopItemAddress
+            // tb_log_update
             // 
-            this.tb_workshopItemAddress.Location = new System.Drawing.Point(114, 6);
-            this.tb_workshopItemAddress.Name = "tb_workshopItemAddress";
-            this.tb_workshopItemAddress.Size = new System.Drawing.Size(374, 25);
-            this.tb_workshopItemAddress.TabIndex = 0;
+            this.tb_log_update.Location = new System.Drawing.Point(385, 218);
+            this.tb_log_update.Multiline = true;
+            this.tb_log_update.Name = "tb_log_update";
+            this.tb_log_update.ReadOnly = true;
+            this.tb_log_update.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tb_log_update.Size = new System.Drawing.Size(272, 147);
+            this.tb_log_update.TabIndex = 16;
             // 
-            // label7
+            // tb_updatePath
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(99, 17);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "창작마당 주소 : ";
+            this.tb_updatePath.Location = new System.Drawing.Point(78, 137);
+            this.tb_updatePath.Name = "tb_updatePath";
+            this.tb_updatePath.ReadOnly = true;
+            this.tb_updatePath.Size = new System.Drawing.Size(174, 25);
+            this.tb_updatePath.TabIndex = 15;
             // 
-            // label8
+            // label14
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(494, 9);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(190, 17);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "URL 복사 하고 그대로 붙여넣기";
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(9, 140);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(73, 17);
+            this.label14.TabIndex = 14;
+            this.label14.Text = "폴더 경로 : ";
             // 
-            // tb_path
+            // label13
             // 
-            this.tb_path.Location = new System.Drawing.Point(84, 121);
-            this.tb_path.Name = "tb_path";
-            this.tb_path.ReadOnly = true;
-            this.tb_path.Size = new System.Drawing.Size(174, 25);
-            this.tb_path.TabIndex = 13;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(9, 165);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(112, 17);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "미리보기 이미지 : ";
             // 
-            // tb_updateTitle
+            // pictureBox2
             // 
-            this.tb_updateTitle.Location = new System.Drawing.Point(329, 46);
-            this.tb_updateTitle.Name = "tb_updateTitle";
-            this.tb_updateTitle.Size = new System.Drawing.Size(328, 25);
-            this.tb_updateTitle.TabIndex = 3;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 185);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(240, 180);
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
             // 
-            // tb_updateTag
+            // button2
             // 
-            this.tb_updateTag.Location = new System.Drawing.Point(329, 77);
-            this.tb_updateTag.Name = "tb_updateTag";
-            this.tb_updateTag.Size = new System.Drawing.Size(328, 25);
-            this.tb_updateTag.TabIndex = 4;
+            this.button2.Location = new System.Drawing.Point(283, 306);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(96, 59);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "업데이트";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // tb_updateDesc
+            // label12
             // 
-            this.tb_updateDesc.Location = new System.Drawing.Point(329, 108);
-            this.tb_updateDesc.Multiline = true;
-            this.tb_updateDesc.Name = "tb_updateDesc";
-            this.tb_updateDesc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tb_updateDesc.Size = new System.Drawing.Size(328, 74);
-            this.tb_updateDesc.TabIndex = 5;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(279, 111);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(44, 17);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "설명 : ";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(279, 80);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(44, 17);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "태그 : ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(279, 49);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(44, 17);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "제목 : ";
             // 
             // groupBox2
             // 
@@ -332,112 +385,92 @@ namespace SteamworkUploader
             this.label9.TabIndex = 0;
             this.label9.Text = "여기로 모드 폴더 드래그";
             // 
-            // label10
+            // tb_updateDesc
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(279, 49);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 17);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "제목 : ";
+            this.tb_updateDesc.Location = new System.Drawing.Point(329, 108);
+            this.tb_updateDesc.Multiline = true;
+            this.tb_updateDesc.Name = "tb_updateDesc";
+            this.tb_updateDesc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tb_updateDesc.Size = new System.Drawing.Size(328, 74);
+            this.tb_updateDesc.TabIndex = 5;
             // 
-            // label11
+            // tb_updateTag
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(279, 80);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(44, 17);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "태그 : ";
+            this.tb_updateTag.Location = new System.Drawing.Point(329, 77);
+            this.tb_updateTag.Name = "tb_updateTag";
+            this.tb_updateTag.Size = new System.Drawing.Size(328, 25);
+            this.tb_updateTag.TabIndex = 4;
             // 
-            // label12
+            // tb_updateTitle
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(279, 111);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(44, 17);
-            this.label12.TabIndex = 9;
-            this.label12.Text = "설명 : ";
+            this.tb_updateTitle.Location = new System.Drawing.Point(329, 46);
+            this.tb_updateTitle.Name = "tb_updateTitle";
+            this.tb_updateTitle.Size = new System.Drawing.Size(328, 25);
+            this.tb_updateTitle.TabIndex = 3;
             // 
-            // button2
+            // label8
             // 
-            this.button2.Location = new System.Drawing.Point(283, 306);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 59);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "업데이트";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(494, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(190, 17);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "URL 복사 하고 그대로 붙여넣기";
             // 
-            // label13
+            // label7
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(9, 165);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(112, 17);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "미리보기 이미지 : ";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(9, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(99, 17);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "창작마당 주소 : ";
             // 
-            // pictureBox2
+            // tb_workshopItemAddress
             // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 185);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(240, 180);
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
+            this.tb_workshopItemAddress.Location = new System.Drawing.Point(114, 6);
+            this.tb_workshopItemAddress.Name = "tb_workshopItemAddress";
+            this.tb_workshopItemAddress.Size = new System.Drawing.Size(374, 25);
+            this.tb_workshopItemAddress.TabIndex = 0;
             // 
-            // tb_updatePath
+            // label16
             // 
-            this.tb_updatePath.Location = new System.Drawing.Point(78, 137);
-            this.tb_updatePath.Name = "tb_updatePath";
-            this.tb_updatePath.ReadOnly = true;
-            this.tb_updatePath.Size = new System.Drawing.Size(174, 25);
-            this.tb_updatePath.TabIndex = 15;
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(13, 15);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(115, 17);
+            this.label16.TabIndex = 13;
+            this.label16.Text = "상점 페이지 주소 : ";
             // 
-            // label14
+            // btn_GameInit
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(9, 140);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(73, 17);
-            this.label14.TabIndex = 14;
-            this.label14.Text = "폴더 경로 : ";
+            this.btn_GameInit.Location = new System.Drawing.Point(564, 12);
+            this.btn_GameInit.Name = "btn_GameInit";
+            this.btn_GameInit.Size = new System.Drawing.Size(127, 64);
+            this.btn_GameInit.TabIndex = 14;
+            this.btn_GameInit.Text = "게임 선택";
+            this.btn_GameInit.UseVisualStyleBackColor = true;
+            this.btn_GameInit.Click += new System.EventHandler(this.btn_GameInit_Click);
             // 
-            // tb_log_update
+            // tb_shopPage
             // 
-            this.tb_log_update.Location = new System.Drawing.Point(385, 218);
-            this.tb_log_update.Multiline = true;
-            this.tb_log_update.Name = "tb_log_update";
-            this.tb_log_update.ReadOnly = true;
-            this.tb_log_update.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tb_log_update.Size = new System.Drawing.Size(272, 147);
-            this.tb_log_update.TabIndex = 16;
-            // 
-            // tb_whatNew
-            // 
-            this.tb_whatNew.Location = new System.Drawing.Point(329, 187);
-            this.tb_whatNew.Name = "tb_whatNew";
-            this.tb_whatNew.Size = new System.Drawing.Size(328, 25);
-            this.tb_whatNew.TabIndex = 17;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(266, 190);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(57, 17);
-            this.label15.TabIndex = 18;
-            this.label15.Text = "변경점 : ";
+            this.tb_shopPage.Location = new System.Drawing.Point(134, 12);
+            this.tb_shopPage.Name = "tb_shopPage";
+            this.tb_shopPage.Size = new System.Drawing.Size(424, 25);
+            this.tb_shopPage.TabIndex = 15;
+            this.tb_shopPage.Text = "https://store.steampowered.com/app/1256670/Library_Of_Ruina/";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 425);
+            this.ClientSize = new System.Drawing.Size(715, 493);
+            this.Controls.Add(this.tb_shopPage);
+            this.Controls.Add(this.btn_GameInit);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("나눔바른고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "창작마당툴";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -449,10 +482,11 @@ namespace SteamworkUploader
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -493,6 +527,9 @@ namespace SteamworkUploader
         private System.Windows.Forms.TextBox tb_log_update;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox tb_whatNew;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btn_GameInit;
+        private System.Windows.Forms.TextBox tb_shopPage;
     }
 }
 
